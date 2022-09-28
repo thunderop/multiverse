@@ -1,0 +1,15 @@
+.ham{
+    display: none;
+}
+.nav-brand-name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0079eb !important;
+}
+
+
+@media (max-width:750px) {
+
+    .ham{
+        display: block;
+    }
+}

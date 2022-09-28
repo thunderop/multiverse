@@ -1,9 +1,15 @@
 import React from 'react'
+import NavbarComp from '../../Components/Navbar'
 
 const Home = () => {
   return (
     <div>
-        HEllo jii ki haal chal
+        <header>
+            <NavbarComp/>
+        </header>
+        <div className='home-main-container'>
+            
+        </div>
     </div>
   )
 }
