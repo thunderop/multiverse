@@ -6,10 +6,11 @@ import {
   Nav,
   NavItem,
   NavLink,
- 
 } from "reactstrap";
-import "./style.css"
-import {GiHamburgerMenu} from "react-icons/gi"
+import "./style.css";
+
+import { GiHamburgerMenu } from "react-icons/gi";
+import { assets } from "../../assets/assets";
 
 const NavbarComp = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,16 +19,32 @@ const NavbarComp = () => {
 
   return (
     <div>
-      <Navbar expand="md" >
-        <NavbarBrand className="nav-brand-name"  href="/">Multiverse</NavbarBrand>
-        <GiHamburgerMenu size={25} className="ham" onClick={toggle}/>
+      <Navbar className="navigation-bar" expand="md" color="light" >
+        <NavbarBrand className="nav-brand-name d-flex align-items-center" href="/">
+        <img
+        alt="logo"
+        className="me-2"
+        src={assets.multiverseLogo}
+        style={{
+          height: 30,
+          width: 30
+        }}
+      />
+          Multiverse
+        </NavbarBrand>
+        <GiHamburgerMenu size={25} className="ham" onClick={toggle} />
         <Collapse className="justify-content-end" isOpen={isOpen} navbar>
-          <Nav className="text-center"  navbar>
+          <Nav className="text-center" navbar>
             <NavItem>
-              <NavLink href="/components/">Blogs</NavLink>
+              <NavLink className="nav-items" href="/components/">
+                Blogs
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <NavLink
+                className="nav-items"
+                href="https://github.com/reactstrap/reactstrap"
+              >
                 Romeo
               </NavLink>
             </NavItem>
