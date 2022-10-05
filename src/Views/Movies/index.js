@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import NavbarComp from "../../Components/Navbar";
 import { setMovies } from "../../redux/actions/actions";
 
 const Movies = () => {
@@ -22,7 +23,13 @@ const Movies = () => {
     movieData();
   }, []);
 
-  return <div>Movies</div>;
+  return (
+    <div>
+      <header>
+        <NavbarComp />
+      </header>
+    </div>
+  );
 };
 
 export default Movies;

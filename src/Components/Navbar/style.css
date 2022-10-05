@@ -9,12 +9,14 @@
     font-family: var(--poppins) !important;
     font-size: 25px !important;
     font-weight: bold !important;
+    cursor: pointer;
 }
 
 .nav-items{
     font-size: 20px !important;
     font-family: var(--poppins) !important;
     font-weight: 600 !important;
+    cursor: pointer;
    
 }
 
